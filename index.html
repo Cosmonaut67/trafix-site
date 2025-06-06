@@ -1,138 +1,387 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Trafixy — Маркетингове агентство | SMM, Таргет, SEO, Веброзробка</title>
-    <meta name="description" content="⭐ Потужний маркетинг для вашого бізнесу! SMM, таргетована реклама, SEO, веброзробка. Збільшуємо продажі та охоплення.">
-    <meta name="keywords" content="маркетингове агентство, SMM, таргетована реклама, SEO, веброзробка, Trafixy, просування сайтів, Facebook ads, Instagram маркетинг">
-    <meta name="author" content="Trafixy Agency">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://trafixy.site">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://trafixy.site/">
-    <meta property="og:title" content="Trafixy — Маркетингове агентство | SMM, Таргет, SEO">
-    <meta property="og:description" content="🚀 Професійний маркетинг для бізнесу. Збільшуємо продажі за допомогою SMM, таргету та SEO.">
-    <meta property="og:image" content="https://trafixy.site/images/og-preview.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://trafixy.site/">
-    <meta property="twitter:title" content="Trafixy — Маркетингове агентство | SMM, Таргет, SEO">
-    <meta property="twitter:description" content="🚀 Професійний маркетинг для бізнесу. Збільшуємо продажі за допомогою SMM, таргету та SEO.">
-    <meta property="twitter:image" content="https://trafixy.site/images/twitter-preview.jpg">
-
-    <!-- Facebook Domain Verification -->
-    <meta name="facebook-domain-verification" content="your_verification_code_here">
-
-    <!-- Schema.org markup -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Trafixy",
-        "url": "https://trafixy.site",
-        "logo": "https://trafixy.site/logo.png",
-        "description": "Маркетингове агентство повного циклу. SMM, таргет, SEO, веброзробка."
-    }
-    </script>
-
-    <!-- CSS -->
+    <title>Trafixy | Маркетингове агентство | Одеса</title>
+    <meta name="description" content="Маркетингове агентство в Одесі. SMM, таргетована реклама, SEO просування, створення сайтів. Комплексний digital-маркетинг для вашого бізнесу.">
     <style>
-        /* Smooth hover effects */
-        .btn {
-            transition: all 0.3s ease;
-        }
-        .btn:hover {
-            transform: scale(1.05);
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --accent: #4895ef;
+            --dark: #1b263b;
+            --light: #f8f9fa;
+            --success: #4cc9f0;
         }
         
-        /* Basic reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
         }
+        
         body {
-            font-family: 'Inter', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
             line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 180px 0 100px;
+            background: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+        
+        /* Services */
+        .services {
+            padding: 100px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .service-icon {
+            font-size: 50px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        
+        /* About */
+        .about {
+            padding: 100px 0;
+            background-color: white;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-text h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .about-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Contact */
+        .contact {
+            padding: 100px 0;
+            background-color: var(--light);
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #bbb;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-image {
+                order: -1;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Header -->
     <header>
-        <nav>
-            <div class="logo">Trafixy</div>
-            <ul>
-                <li><a href="/">Головна</a></li>
-                <li><a href="/services">Послуги</a></li>
-                <li><a href="/cases">Кейси</a></li>
-                <li><a href="/contacts">Контакти</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Trafixy<span>.</span></a>
+                <ul class="nav-links">
+                    <li><a href="#services">Послуги</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#cases">Кейси</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+                <a href="#contact" class="btn">Зв'язатися</a>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Професійний маркетинг для вашого бізнесу</h1>
-        <p>SMM, таргетована реклама, SEO та веброзробка під ключ</p>
-        <a href="#contact" class="btn">Зв'язатися</a>
+        <div class="container">
+            <h1>Маркетингове агентство в Одесі</h1>
+            <p>Комплексний digital-маркетинг для вашого бізнесу. Результати, які перевершать ваші очікування.</p>
+            <a href="#services" class="btn">Наші послуги</a>
+        </div>
     </section>
 
     <!-- Services -->
-    <section class="services">
-        <h2>Наші послуги</h2>
-        <div class="service-grid">
-            <div class="service-card">
-                <h3>SMM</h3>
-                <p>Повний супровід соціальних мереж</p>
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Наші послуги</h2>
+                <p>Ми пропонуємо повний спектр маркетингових послуг для вашого бізнесу</p>
             </div>
-            <div class="service-card">
-                <h3>Таргетована реклама</h3>
-                <p>Точні налаштування рекламних кампаній</p>
-            </div>
-            <div class="service-card">
-                <h3>SEO</h3>
-                <p>Просування сайтів у пошукових системах</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>SMM просування</h3>
+                    <p>Повний супровід соціальних мереж: контент, таргет, аналітика</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Таргетована реклама</h3>
+                    <p>Точні налаштування рекламних кампаній у Facebook та Instagram</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>SEO оптимізація</h3>
+                    <p>Просування сайтів у пошукових системах Google та Яндекс</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Створення сайтів</h3>
+                    <p>Сучасні сайти, які продають: лендінги, інтернет-магазини, корпоративні сайти</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✏️</div>
+                    <h3>Брендинг</h3>
+                    <p>Розробка унікального стилю компанії: логотип, фірмовий стиль, гайди</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Аналітика</h3>
+                    <p>Глибокий аналіз ефективності маркетингових кампаній</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2023 Trafixy. Всі права захищені.</p>
-    </footer>
-
-    <!-- JavaScript -->
-    <script>
-        // Simple animation on scroll
-        document.addEventListener('DOMContentLoaded', function() {
-            const animateOnScroll = () => {
-                const elements = document.querySelectorAll('.service-card');
-                elements.forEach(el => {
-                    const rect = el.getBoundingClientRect();
-                    if (rect.top < window.innerHeight - 100) {
-                        el.classList.add('animated');
-                    }
-                });
-            };
-            
-            window.addEventListener('scroll', animateOnScroll);
-            animateOnScroll(); // Trigger on load
-        });
-    </script>
-</body>
-</html>
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container
