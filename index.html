@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trafixy | Маркетингове агентство | Одеса</title>
     <meta name="description" content="Маркетингове агентство в Одесі. SMM, таргетована реклама, SEO просування, створення сайтів. Комплексний digital-маркетинг для вашого бізнесу.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         :root {
             --primary: #4361ee;
@@ -288,6 +289,35 @@
             color: white;
         }
         
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: white;
+            text-align: center;
+            line-height: 36px;
+            margin-right: 10px;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        .footer-column ul li i {
+            margin-right: 8px;
+            color: var(--accent);
+            width: 18px;
+            text-align: center;
+        }
+
         .copyright {
             text-align: center;
             padding-top: 30px;
@@ -295,6 +325,20 @@
             color: #bbb;
         }
         
+        .legal-links {
+            margin-top: 15px;
+        }
+
+        .legal-links a {
+            color: #bbb;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .legal-links a:hover {
+            color: white;
+        }
+
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 36px;
@@ -311,6 +355,10 @@
             .about-image {
                 order: -1;
             }
+            
+            .nav-links {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -324,6 +372,7 @@
                     <li><a href="#services">Послуги</a></li>
                     <li><a href="#about">Про нас</a></li>
                     <li><a href="#cases">Кейси</a></li>
+                    <li><a href="#blog">Блог</a></li>
                     <li><a href="#contact">Контакти</a></li>
                 </ul>
                 <a href="#contact" class="btn">Зв'язатися</a>
@@ -384,4 +433,113 @@
 
     <!-- About -->
     <section class="about" id="about">
-        <div class="container
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Про наше агентство</h2>
+                    <p>Trafixy - це креативне маркетингове агентство з Одеси, яке спеціалізується на digital-маркетингу. Ми допомагаємо бізнесу зростати за допомогою ефективних інструментів інтернет-маркетингу.</p>
+                    <p>Наша команда - це професіонали з більш ніж 5-річним досвідом роботи у сфері SMM, таргетованої реклами, SEO та веб-розробки. Ми любимо свою справу і знаємо, як досягти результатів.</p>
+                    <a href="#contact" class="btn">Зв'язатися з нами</a>
+                </div>
+                <div class="about-image">
+                    <!-- Placeholder for image -->
+                    <div style="background: #4361ee; height: 400px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px;">
+                        Наша команда в Одесі
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Зв'язатися з нами</h2>
+                <p>Залиште заявку і ми зв'яжемося з вами найближчим часом</p>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Ваше ім'я</label>
+                        <input type="text" id="name" placeholder="Введіть ваше ім'я" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Введіть ваш email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" placeholder="Введіть ваш телефон">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Повідомлення</label>
+                        <textarea id="message" placeholder="Опишіть ваш проект або запитання"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Відправити заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Trafixy</h3>
+                    <p>Маркетингове агентство в Одесі. Комплексний digital-маркетинг для вашого бізнесу.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Послуги</h3>
+                    <ul>
+                        <li><a href="/smm">SMM просування</a></li>
+                        <li><a href="/target">Таргетована реклама</a></li>
+                        <li><a href="/seo">SEO оптимізація</a></li>
+                        <li><a href="/web">Створення сайтів</a></li>
+                        <li><a href="/branding">Брендинг</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Контакти (Одеса)</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> вул. Дерибасівська, 12, оф. 34</li>
+                        <li><i class="fas fa-phone"></i> +38 (048) 700-12-34</li>
+                        <li><i class="fas fa-phone"></i> +38 (093) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> odesa@trafixy.site</li>
+                        <li><i class="fas fa-clock"></i> Пн-Пт: 9:00-18:00</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Інформація</h3>
+                    <ul>
+                        <li><a href="/about">Про нас</a></li>
+                        <li><a href="/payment">Оплата та доставка</a></li>
+                        <li><a href="/guarantee">Гарантія та повернення</a></li>
+                        <li><a href="/blog">Блог</a></li>
+                        <li><a href="/vacancies">Вакансії</a></li>
+                        <li><a href="/partners">Партнерам</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Trafixy. Всі права захищені.</p>
+                <div class="legal-links">
+                    <a href="/privacy">Політика конфіденційності</a>
+                    <a href="/terms">Умови використання</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
